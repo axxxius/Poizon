@@ -1,9 +1,7 @@
 import { useEffect, useRef, useCallback, useMemo } from 'react';
 import { useRecoilState } from 'recoil';
 
-import { timeAtom } from '@utils';
-
-const MAX_TIME = 5;
+import { MAX_TIME, timeAtom } from '@utils';
 
 export const useTimer = () => {
   const [time, setTime] = useRecoilState(timeAtom);

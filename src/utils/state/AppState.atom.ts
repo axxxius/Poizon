@@ -1,5 +1,5 @@
 import { atom } from 'recoil';
-import { ranIndex, texts } from '@utils';
+import { MAX_TIME, ranIndex, texts } from '@utils';
 
 export const textAtom = atom<string>({
   key: 'textAtom',
@@ -8,7 +8,7 @@ export const textAtom = atom<string>({
 
 export const timeAtom = atom<number>({
   key: 'timeAtom',
-  default: 5
+  default: MAX_TIME
 });
 
 export const wordAtom = atom<string>({
