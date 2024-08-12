@@ -1,0 +1,35 @@
+.content {
+  user-select: none;
+}
+
+.char {
+  text-align: center;
+  font-size: 25px;
+  color: grey;
+  padding: 0 2px;
+  margin: 5px 2px 5px 0;
+  border-radius: 2px;
+}
+
+.char.active {
+  color: var(--secondaryColor);
+  border-radius: 0;
+  border-bottom: 3px solid var(--secondaryColor);
+  animation: cursorBlink 2s 1s infinite;
+}
+
+@keyframes cursorBlink {
+  0% { border-color: var(--secondaryColor) }
+  50% { border-color: transparent }
+  100% { border-color: var(--secondaryColor) }
+}
+
+.char.correct {
+  color: var(--correctColor);
+  background-color: var(--backgroundCorrectColor);
+}
+
+.char.incorrect {
+  color: var(--incorrectColor);
+  background-color: var(--backgroundIncorrectColor);
+}

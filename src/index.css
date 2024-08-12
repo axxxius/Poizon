@@ -1,0 +1,24 @@
+:root {
+  --fontFamily: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --lineHeight: 1.5;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --background: #242424;
+  --primaryColor: #838383;
+  --secondaryColor: #155DA4;
+  --correctColor: #479f48;
+  --backgroundCorrectColor: #f1fff1;
+  --incorrectColor: #ff1a1a;
+  --backgroundIncorrectColor: #cf9898;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primaryColor);
+  padding: 10px 60px;
+  scrollbar-width: thin;
+  font-family: var(--fontFamily), serif;
+  line-height: var(--lineHeight);
+}

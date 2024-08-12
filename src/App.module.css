@@ -1,0 +1,16 @@
+.restart {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+  user-select: none;
+}
+
+.title {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 30px;
+}
